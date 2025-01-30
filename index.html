@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Impuestos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Impuestos</h1>
+    <div class="input-group">
+      <label for="total">Valor con impuestos:</label>
+      <input type="number" id="total" placeholder="Ingrese el valor total">
+    </div>
+    <div class="input-group">
+      <label for="tax">Porcentaje de impuestos (%):</label>
+      <input type="number" id="tax" value="13">
+    </div>
+    <div class="result">
+      <div class="result-line">
+        <span>Valor sin impuestos:</span>
+        <span id="result">0.00</span>
+        <button id="copy">Copiar</button>
+      </div>
+      <div class="tax-detail">
+        <span>Valor del impuesto:</span>
+        <span id="tax-value">0.00</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
